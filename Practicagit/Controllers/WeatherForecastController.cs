@@ -17,7 +17,7 @@ public class WeatherForecastController : ControllerBase
     {
         _logger = logger;
     }
-
+    
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
@@ -28,5 +28,27 @@ public class WeatherForecastController : ControllerBase
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
+
+
+        
+
+ 
     }
-}
+    
+
+
+
+
+   
+
+
+
+}    
+
+
+
+
+
+
+
+
