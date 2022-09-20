@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
 using Practicagit.Models;
 
 namespace Practicagit.Controllers
@@ -39,9 +41,9 @@ namespace Practicagit.Controllers
                 Id = 5
             };
             FakeContact.Add(contactoNuevo);
+
             return Ok(FakeContact);
         }
 
     }
 }
-
