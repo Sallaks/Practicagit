@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Practicagit.Models;
 
@@ -27,30 +27,22 @@ namespace Practicagit.Controllers
                 Id = 4
 
              },
-
         };
 
         [HttpGet]
-
         public IActionResult GetAll()
         {
-            var contact = new Contact()
+            var contactoNuevo = new Contact()
             {
-
-                Name = "bababa",
+                Name = "rama1",
                 CelularNumber = 12312311311,
                 TelephoneNumber = 2313123131,
-                Id = 4
-
+                Id = 5
             };
-
-            FakeContact.Add(contact);
+            FakeContact.Add(contactoNuevo);
 
             return Ok(FakeContact);
         }
 
     }
 }
-  
-
-//hola soy la rama 2
