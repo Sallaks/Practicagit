@@ -44,5 +44,12 @@ namespace Practicagit.Controllers
             return Ok(FakeContact);
         }
 
+        [HttpGet]
+        [Route("GetOne/{Id}")]
+        public IActionResult GetOneById(int CelularNumber)
+        {
+            return Ok(FakeContact.Where(x => x.CelularNumber == CelularNumber).ToList());
+        }
+
     }
 }
