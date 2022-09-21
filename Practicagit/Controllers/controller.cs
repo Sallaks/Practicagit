@@ -34,6 +34,18 @@ namespace Practicagit.Controllers
 
         public IActionResult GetAll()
         {
+            var contact = new Contact()
+            {
+
+                Name = "bababa",
+                CelularNumber = 12312311311,
+                TelephoneNumber = 2313123131,
+                Id = 4
+
+            };
+
+            FakeContact.Add(contact);
+
             return Ok(FakeContact);
         }
 
